@@ -53,10 +53,10 @@ if(isset($_POST['update_profile'])){
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>update profile</title>
    <!-- admin_page -->
-   <link rel="stylesheet" type="text/css" href="./css/dashboard.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" type="text/css" href="./assets/css/dashboard.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="./css/update_profile.css">
+   <link rel="stylesheet" href="./assets/css/update_profile.css">
 
 </head>
 <body>

@@ -129,8 +129,8 @@ body {
 /* === admin_page === */
 .main{
     position: fixed;      
-    height: 710px;
-    width: 1230px;
+    height: 570px;
+    width: 1200px;
     margin-left: 304px;
     
     background-color: #eee;
@@ -145,7 +145,7 @@ body {
 .main .bx{
     background-color:#fff;
     height: 163px;
-    width: 270px; 
+    width: 230px; 
     margin: 25px;
     box-shadow:0 5px 10px rgba(0,0,0,.1);
 
@@ -218,15 +218,15 @@ body {
     overflow-y: auto;
     /* display: flex; */
     display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
    /* gap:1.5rem; */
    align-items: flex-start;
 
   }
   
   .account_box{
-    height: 350px;
-    width: 350px; 
+    height: 320px;
+    width: 300px; 
      
   }
   .main .account_box h3{

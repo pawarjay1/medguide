@@ -61,7 +61,7 @@ if(isset($_POST['submit'])){
                 <label>confirm Password</label>
                 <input type="password" name="cpassword" placeholder="confirm your password!">
                 <select name="user_type" class="sel_op" hidden>
-                    <option> Perant</option>
+                    <option> user</option>
                     <option> Admin </option>
                     <option> Driver </option>
                 </select>

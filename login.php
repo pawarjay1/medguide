@@ -28,12 +28,13 @@ if(isset($_POST['submit'])){
          $_SESSION['uname'] = $row['user_type'];
          header('location:admin_page.php');
 
-      }elseif($row['user_type'] == 'Perant'){
+      }elseif($row['user_type'] == 'user'){
 
          $_SESSION['name'] = $row['name'];
 
          $_SESSION['uname'] = $row['user_type'];
-         header('location:perant_page.php');
+        //  header('location:perant_page.php');
+        header('location:user_page.php');
       }
       else{
         $_SESSION['name'] = $row['name'];
