@@ -11,6 +11,40 @@ if (!isset($_SESSION['name'])) {
 
 ?>
 
+<?php
+@include 'config.php'; 
+
+if(isset($_POST['submit'])){
+    $name = mysqli_real_escape_string($conn,$_POST['name']);
+    $email = mysqli_real_escape_string($conn,$_POST['email']);
+    $pass = md5($_POST['password']);
+    $cpass = md5($_POST['cpassword']);
+    $user_type = $_POST['user_type'];
+
+    $image = $_POST['image']; 
+
+    $select = " SELECT * FROM users WHERE email='$email' && password='$pass' "; 
+
+    $result = mysqli_query($conn, $select); 
+
+    if(mysqli_num_rows($result) > 0){
+        $error[] = 'user is already exist!';
+    }                                                                     
+    else{
+        if($pass != $cpass){
+            $error[] = 'password is not matched!'; 
+        }
+        else{
+            $insert = "INSERT INTO users(name,email,password,user_type,image) values('$name','$email','$pass','$user_type','$image')"; 
+            mysqli_query($conn,$insert);
+            header('location:login.php'); 
+            
+        }
+    }
+}
+
+?>
+
 
 
 <!DOCTYPE html>
@@ -90,7 +124,7 @@ if (!isset($_SESSION['name'])) {
             <li>
                 <a href="admin_student.php" class="active">
                     <i class='bx bx-plus'></i>
-                    <span class="link_name">Student</span>
+                    <span class="link_name">Articals</span>
                 </a>
 
             </li>
@@ -122,44 +156,33 @@ if (!isset($_SESSION['name'])) {
 
                 <div class="flex">
                     <div class="inputBox">
-                        <span>EnrollmentNo :</span>
-                        <input type="text" name="eno" class="box" placeholder="enter enrollment number" value="">
-                        <span>Student Name :</span>
-                        <input type="text" name="name" class="box" placeholder="enter student name" value="">
-                        
-                        <span>Choose Degree :</span>
-                        <select name="degree" class="box">
-                            <option>Diploma</option>
-                            <option>BE</option>
-                            <option>bvoc</option>
-                        </select>
 
-                        <span>Email :</span>
-                        <input type="email" name="email"  class="box" placeholder="enter student email">
+                        <span>Title :</span>
+                        <input type="text" name="title" class="box" placeholder="title of artical" value="">
+
+                        <span>Product Price :</span>
+                        <input type="text" name="price" class="box" placeholder="enter price" value="">
+
+                        <span>Product Image :</span>
+                        <input type="file" name="image" accept="image/jpg, image/jpeg, image/png" class="box">
+
                         
                     </div>
                     <div class="inputBox">
                         
-                        <span>Department :</span>
-                        <select name="dept" class="box">
-                            <option>Computer</option>
-                            <option>Mechanical</option>
-                            <option>Chemical</option>
-                            <option>Electrical</option>
-                        </select>
+                        <span>Side Effects</span>
+                        <input type="email" name="side_effects"  class="box" placeholder="enter side effects of medicine">
+                        
+                        <span>Uses</span>
+                        <input type="email" name="uses"  class="box" placeholder="enter uses of this medicine">
 
-                        <span>Route of the Bus :</span>
-                        <select name="bus_route" class="box">
-                            <option>Surat</option>
-                            <option>Navsari</option>
-                            <option>Bardoli</option>
-                        </select>
 
-                        <span>Address :</span>
-                        <textarea name="addres" id="" cols="30" rows="5" placeholder="enter full address" class="box"></textarea>
+
+                        <span>Description :</span>
+                        <textarea name="description" id="" cols="30" rows="5" placeholder="enter basic description..." class="box"></textarea>
                     </div>
                 </div>
-                <input type="submit" value="Upload Student" name="Upload_Student" class="btn">
+                <input type="submit" value="Publish Artical" name="Upload_Student" class="btn">
 
             </form>
 
