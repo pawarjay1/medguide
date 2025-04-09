@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* start login page  */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: tomato;
+}
+.container{
+    width: 100%;
+    display: flex;
+    max-width: 1030px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.login{
+    width: 500px;
+}
+form{
+    width: 250px;
+    margin: 60px auto;
+}
+h1{
+    margin: 20px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+p{
+    text-align: center;
+    margin: 10px;
+}
+hr{
+    border-top: 2px solid tomato;
+}
+
+.pic img{
+    width: 600px;
+    height: auto;
+    transform: translate(-5%,35%);
+    border-radius: 20px; 
+    
+}
+
+form label{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+input{
+    width: 100%;
+    margin: 2px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.btn{
+    display: block;
+   width: 100%;
+   margin-top: 1rem;
+   border-radius: .5rem;
+   border: none; 
+   color: white;
+   font-size: 1rem;
+   padding: 10px 10px;
+   text-transform: capitalize;
+   cursor: pointer;
+   text-align: center;
+   background-color: tomato;
+}
+.btn:hover{
+    background: rgba(214, 86, 64, 1);
+}
+p{
+    margin: 20px;
+}
+a{
+    color: tomato;
+    text-decoration: none;
+}
+
+a:hover{
+    color: tomato;
+    text-decoration: underline; 
+}
+
+.sel_op{
+    width: 100%; 
+    margin-top: 10px;
+    margin-left: 2px;
+    padding: 8px;
+    border-radius: 7px;
+}
+
+
+
+
+
+/* login page End  */
+
+
+
+
+

@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 130vh;
+    overflow: hidden;
+}
+
+.slidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    padding: 6px 14px;
+    background: tomato;
+}
+
+.slidebar .logo_content .logo {
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_content .logo i {
+    font-size: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.logo_content .logo .logo_name {
+    font-size: 30px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.slidebar #btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    top: 6px;
+    color: #fff;
+    font-size: 22px;
+    margin-left: 5px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    transform: translateX(-50%);
+}
+
+.slidebar ul {
+    margin-top: 20px;
+}
+
+.slidebar ul li {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 10px 5px;
+    font-size: 20px;
+    list-style: none;
+    line-height: 50px;
+}
+
+.slidebar ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: bisque;
+    transition: all 0.1s ease;
+}
+
+.slidebar ul li a:hover {
+    color: tomato;
+    background: #fff;
+    border-radius: 7px;
+}
+
+.slidebar ul li .active {
+    color: tomato;
+    background: #fff;
+    border-radius: 7px;
+}
+
+
+.slidebar ul li i {
+    height: 50px;
+    min-width: 50px;
+    line-height: 50px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.slidebar ul li input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding-left: 50px;
+    border-radius: 12px;
+    color: tomato;
+    background: #fff;
+}
+
+.slidebar ul li .bx-search-alt-2 {
+    position: absolute;
+    z-index: 99;
+    color: tomato;
+    font-size: 22px;
+}
+
+
+
+
+/* === admin_page === */
+.main{
+    position: fixed;      
+    height: 710px;
+    width: 1230px;
+    margin-left: 304px;
+    
+    background-color: #eee;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+.main .bx{
+    background-color:#fff;
+    height: 163px;
+    width: 270px; 
+    margin: 25px;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+
+    text-align: center;
+    border-radius: 5px;
+}
+
+.main .bx h3{
+    margin-top: 14px; 
+    font-size: 20px;
+    color: rgba(51, 51, 51, 0.817);
+}
+
+#total_account{
+   background-color: #eee;
+ 
+    width:70%;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 33px; 
+}
+
+.btn{
+   width: 85%;
+   border-radius: 5px;
+   padding:10px 30px;
+   color:white;
+   text-decoration: none;
+   display: block;
+   text-align: center;
+   cursor: pointer;
+   font-size: 17px;
+   margin-top: 10px;
+   background-color: #3498db;
+   margin-top: 15px;
+}
+
+.btn:hover{
+    background-color: #2980b9;
+ }
+ 
+
+
+ /* === admin_page End === */
+
+
+
+
+
+
+
+ /* ====== admin_account ====== */
+
+ .account_box{
+    background-color:#fff;
+    height: 163px;
+    width: 350px; 
+    margin: 25px;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+
+    text-align: center;
+    border-radius: 5px;
+    
+ }
+
+
+ .main{
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* display: flex; */
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   /* gap:1.5rem; */
+   align-items: flex-start;
+
+  }
+  
+  .account_box{
+    height: 350px;
+    width: 350px; 
+     
+  }
+  .main .account_box h3{
+    margin: 8px;
+    color: rgba(51, 51, 51, 0.817);
+  }
+
+  .main .account_box a{
+    width: 50%;
+   border-radius: 5px;
+   padding:10px 30px;
+   color:#fff;
+   display: block;
+   margin-left:89px;
+   text-align: center;
+   cursor: pointer;
+   font-size: 20px;
+   margin-top: 10px;
+    text-decoration: none;
+   background-color: tomato;
+  }
+
+  .main .account_box a:hover{
+    width: 50%;
+   border-radius: 5px;
+   padding:10px 30px;
+   color:#fff;
+   display: block;
+   text-align: center;
+   cursor: pointer;
+   font-size: 20px;
+   margin-top: 10px;
+    text-decoration: none;
+   background-color: #e74c3c;
+  }
+
+  .main .account_box img{
+    margin-top: 20px;
+   height: 100px;
+   width: 100px;
+   
+   border-radius: 50%;
+   object-fit: cover;
+   margin-bottom: 5px;
+}
+
+
+
+/* ====== admin_account End ========== */
+
+
+/* ========== perant_page ============ */
+
+.mainn{
+    position: fixed;      
+    height: 710px;
+    width: 1230px;
+    margin-left: 304px;
+    
+    background-color: #eee;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+.mainn .logo{
+    margin-top: -160px;
+    margin-left: 600px;
+}
+
+.mainn .tx{
+    color: rgba(51, 51, 51, 0.817); 
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 1.3rem;
+    height: auto;
+    width: 590px; 
+}
+
+
+.btn_track{
+    width: 45%;
+    border-radius: 5px;
+    padding:13px 30px;
+    color:white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 10px;
+    background-color: #3498db;
+    margin-top: 23px;
+ }
+ 
+ .btn_track:hover{
+     background-color: #2980b9;
+  }
+
+
+  /* ========== perant_page End ============ */
+
+
+  /* ============= perent_feedback ======== */
+
+.main .update-profile h1{
+ color: rgba(51, 51, 51, 0.817); 
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 1.3rem;
+}
+
+.flex .inputBox .box_feed {
+    width: 220%;
+    border-radius: 5px;
+    background-color: var(--light-bg);
+    padding: 12px 14px;
+    font-size: 17px;
+    color: var(--black);
+    margin-top: 10px;
+
+}
+
+/* ============= perent_feedback End ======== */
+
+/* ============= perent_location End ======== */
+
+.copyfield{
+    display: flex;
+    align-items: center;
+    background-color: #3498db;
+    border-radius: 5px;
+    position:absolute;
+    transform: translate(8%,-590%);
+}
+
+#link{
+    width: 350px;
+    padding: 12px 10px;
+    border: 1px solid #3498db;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 19px;
+    overflow-x: scroll;
+}
+#link::-webkit-scrollbar{
+    display: none;
+}
+
+#copy-btn{
+    color: #fff;
+    padding: 0 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.mainn .txx{
+    
+    color: rgba(51, 51, 51, 0.817); 
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 1.3rem;
+    height: auto;
+    width: 590px; 
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
