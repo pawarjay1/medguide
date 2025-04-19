@@ -7,6 +7,50 @@ session_start();
 if(!isset($_SESSION['name'])){
    header('location:login.php');
 }
+
+?>
+
+<?php
+    // if(isset($_POST['submit'])){
+    //     $str=mysqli_real_escape_string($con,$_POST['str']);
+    //     $sql="select id, title,'news' from articals where title 
+    //     like '%$str%' or description like '%$str%'"; 
+    //     // UNION
+    //     // select id, content as title, description,'page' from page where content 
+    //     // like '%$str%' or content like '%$str%'";
+    //     $res=mysqli_query($con,$sql);
+    //     if(mysqli_num_rows($res)>0){
+    //         while($row=mysqli_fetch_assoc($res)){
+    //             echo "<a href='details.php?id=".$row['id']."&t=".$row['news']."'>".$row['title']."</a>";
+    //             echo "<br/>";
+    //         }
+    //     }else{
+    //         echo "No data found";
+    //     }
+    // }
+?>
+
+
+<?php 
+$results = [];
+$search = "";
+
+// Handle search
+// if (isset($_GET['submit'])) {
+//     $search = $conn->real_escape_string($_GET['search']);
+
+//     $sql = "SELECT * FROM articles 
+//             WHERE title LIKE '%$str%' 
+//                OR content LIKE '%$str%'";
+
+//     $query = $conn->query($sql);
+
+//     if ($query->num_rows > 0) {
+//         while ($row = $query->fetch_assoc()) {
+//             $results[] = $row;
+//         }
+//     }
+// }
 ?>
 
 <!DOCTYPE html>
@@ -51,8 +95,9 @@ if(!isset($_SESSION['name'])){
                 </div> -->
 
                 <div class="search-container">
-                    <input type="text" placeholder="Search Medicine...">
-                    <button>Search</button>
+                    <input type="text" name="str" placeholder="Search Medicine...">
+
+                    <input type="submit" value="search" name="submit" class="search-container">
                 </div>
                 <br>
                 <!-- <h3><i class='bx bx-file'></i>Find medicine with prescription <a href="#">Upload Now</a></h3> -->

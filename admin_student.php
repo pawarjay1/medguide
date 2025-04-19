@@ -15,36 +15,38 @@ if (!isset($_SESSION['name'])) {
 @include 'config.php'; 
 
 if(isset($_POST['submit'])){
-    $name = mysqli_real_escape_string($conn,$_POST['name']);
-    $email = mysqli_real_escape_string($conn,$_POST['email']);
-    $pass = md5($_POST['password']);
-    $cpass = md5($_POST['cpassword']);
-    $user_type = $_POST['user_type'];
+    $title = $_POST['title'];
+    $price = $_POST['price'];
+    
+    $side_effects = $_POST['side_effects'];
+    $uses = $_POST['uses'];
+    $description = $_POST['description'];
 
-    $image = $_POST['image']; 
+    // $image = $_POST['image']; 
 
-    $select = " SELECT * FROM users WHERE email='$email' && password='$pass' "; 
+    $imageName = $_FILES["image"]["name"];
+    $imageData = file_get_contents($_FILES["image"]["tmp_name"]);
+    $imageData = $conn->real_escape_string($imageData);
+
+
+
+    $select = " SELECT * FROM articals WHERE title='$title' "; 
 
     $result = mysqli_query($conn, $select); 
 
     if(mysqli_num_rows($result) > 0){
-        $error[] = 'user is already exist!';
-    }                                                                     
+        $error[] = 'this product artical is already publish!';
+    } 
     else{
-        if($pass != $cpass){
-            $error[] = 'password is not matched!'; 
-        }
-        else{
-            $insert = "INSERT INTO users(name,email,password,user_type,image) values('$name','$email','$pass','$user_type','$image')"; 
+            $insert = "INSERT INTO articals(title,price,side_effects,uses,description,image) values('$title','$price','$side_effects','$uses','$description','$imageData')"; 
             mysqli_query($conn,$insert);
-            header('location:login.php'); 
-            
-        }
-    }
+            header('location:admin_student.php'); 
+    }                                                                     
+    
 }
 
-?>
 
+?>
 
 
 <!DOCTYPE html>
@@ -150,11 +152,16 @@ if(isset($_POST['submit'])){
 
        <div class="update-profile">    <!-- this class is used for reusability of the code  -->
 
-           
             <form action="" method="post" enctype="multipart/form-data">
-                
 
-                <div class="flex">
+                <div class="flex"> 
+                <?php
+                if(isset($error)){
+                    foreach($error as $error){
+                         echo '<span>'.$error.'</span>';
+                    };
+                };
+                ?>
                     <div class="inputBox">
 
                         <span>Title :</span>
@@ -163,33 +170,30 @@ if(isset($_POST['submit'])){
                         <span>Product Price :</span>
                         <input type="text" name="price" class="box" placeholder="enter price" value="">
 
-                        <span>Product Image :</span>
-                        <input type="file" name="image" accept="image/jpg, image/jpeg, image/png" class="box">
-
+                        <span>Side Effects</span>
+                        <input type="text" name="side_effects"  class="box" placeholder="enter side effects of medicine">
                         
                     </div>
                     <div class="inputBox">
                         
-                        <span>Side Effects</span>
-                        <input type="email" name="side_effects"  class="box" placeholder="enter side effects of medicine">
+                        
                         
                         <span>Uses</span>
-                        <input type="email" name="uses"  class="box" placeholder="enter uses of this medicine">
-
-
+                        <input type="text" name="uses"  class="box" placeholder="enter uses of this medicine">
 
                         <span>Description :</span>
                         <textarea name="description" id="" cols="30" rows="5" placeholder="enter basic description..." class="box"></textarea>
+
+                        <span>Product Image :</span>
+                        <input type="file" name="image" accept="image/jpg, image/jpeg, image/png" class="box">
                     </div>
                 </div>
-                <input type="submit" value="Publish Artical" name="Upload_Student" class="btn">
-
+                <input type="submit" value="Publish Artical" name="submit" class="btn">
             </form>
 
+           
         </div>
-
     </div>
-
 </body>
 
 </html>

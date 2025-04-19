@@ -25,9 +25,8 @@ if(isset($_POST['submit'])){
             $insert = "INSERT INTO users(name,email,password,user_type,image) values('$name','$email','$pass','$user_type','$image')"; 
             mysqli_query($conn,$insert);
             header('location:login.php'); 
-            
         }
-    }
+    } 
 }
 
 ?>
@@ -63,7 +62,7 @@ if(isset($_POST['submit'])){
                 <select name="user_type" class="sel_op" hidden>
                     <option> user</option>
                     <option> Admin </option>
-                    <option> Driver </option>
+                    <option> pharmasists </option>
                 </select>
                <label> Choose Your Pic </label>
             <input type="file" name="image" accept="image/jpg, image/jpeg, image/png" class="box">

@@ -10,6 +10,7 @@ html,body{
     text-decoration: none !important;
 }
 
+
 .nav{
     position: fixed;
     z-index: 1000;
@@ -101,6 +102,8 @@ html,body{
     width: 300px;
   }
 
+
+
   .search-container input[type="text"] {
     width: 100%;
     padding: 12px 40px 12px 15px;
@@ -111,10 +114,11 @@ html,body{
     outline: none;
   }
 
-  .search-container button {
+  .search-container input[type="submit"] {
     position: absolute;
     right: 5px;
     top: 50%;
+    width: 170px; 
     transform: translate(70%,-50%);
     background: #e0501b;
     border: none;
