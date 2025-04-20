@@ -10,6 +10,62 @@ html,body{
     text-decoration: none !important;
 }
 
+.search-list{
+    margin-top: 20px;
+}
+
+.search-list ul {
+    list-style: none; /* Removes default bullets */
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+  }
+  
+  .search-list ul li {
+    padding: 5px 15px;
+    border-radius: 11px;
+    width: 379px;
+    list-style: none;
+    
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+  }
+
+  .search-list ul li a {
+    color: rgb(30, 30, 30); 
+  }
+  
+  .search-list ul li:hover {
+    background-color: #fadfd5;
+    cursor: pointer;
+  }
+  
+  /* Optional: add icon before each item */
+  .search-list ul li::before {
+    
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+
+
+/* artical page styling  */
+
+.main{
+    margin-top: 800px; 
+}
+
+.description { 
+    
+    height: 300px;
+    width: 600px; 
+
+}
 
 
 .nav{

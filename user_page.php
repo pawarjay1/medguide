@@ -60,7 +60,7 @@ if(!isset($_SESSION['name'])){
                     </form>
                 </div>
 
-                <div class="search-container">
+                <div class="search-list">
                     <ul>
                         
                         <?php
