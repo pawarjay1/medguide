@@ -364,7 +364,7 @@ li span{
 
 .banner{
     height: 150px;
-    background-color: #ffce63;
+    background-color: #e0501b;
     display: flex;
     flex-direction: row;
     padding: 50px;
@@ -373,8 +373,14 @@ li span{
 }
 
 .bannerText h1{
-    font-size: 3vw;
-    color: #000;
+    /* font-size: 3vw; */
+    color: #fff;
+    font-weight: 600;
+}
+
+.bannerText p{
+    /* font-size: 3vw; */
+    color: #fff;
     font-weight: 600;
 }
 
@@ -385,6 +391,14 @@ li span{
 
 .bannerImg img{
     width: 20vw;
+}
+
+.bannerImg p{
+    color: #fff;
+}
+
+.bannerImg h1{
+    color: #fff;
 }
 
 /* FOOTER CSS */

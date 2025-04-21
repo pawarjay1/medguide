@@ -3,11 +3,9 @@
 @include 'config.php';
 
 session_start();
-
 if(!isset($_SESSION['name'])){
    header('location:login.php');
 }
-
 ?>
 
 
@@ -22,7 +20,6 @@ if(!isset($_SESSION['name'])){
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
    
 </head>
@@ -162,7 +159,6 @@ if(!isset($_SESSION['name'])){
                     </div>
                 </div>
 
-
                 <div class="card three" data-aos="fade-up" data-aos-duration="1600">
                     <img src="./assets/img/videocall.png" class="cardthreeImg" alt="" data-aos="fade-up" data-aos-duration="1300">
                     <div class="cardbgone"></div>
@@ -179,7 +175,6 @@ if(!isset($_SESSION['name'])){
             </div>
         </div>
 
-
         <!-- BANNER AND FOOTER -->
 
         <div class="banner">
@@ -192,20 +187,7 @@ if(!isset($_SESSION['name'])){
                 <h1>About MedGuide</h1>
                 <p>“Your trusted companion for health tools and wellness insights.”</p>
             </div>
-
-
-            <!-- <div class="footer">
-                <h2>MedGuide.</h2>
-                <div class="footerlinks">
-                    <a href="#" class="mainlink">Corona Updates</a>
-                    <a href="#">Help</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                </div>
-            </div> -->
         </div>
-
-        
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

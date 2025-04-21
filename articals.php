@@ -55,7 +55,7 @@ if(!isset($_SESSION['name'])){
                     $id=mysqli_real_escape_string($conn,$_GET['id']);
                     $t=mysqli_real_escape_string($conn,$_GET['t']);
                     if($t=="articals"){
-                        $sql="select id, title,price,side_effects, description,image from articals where id='$id'";
+                        $sql="select id, title,price,side_effects, description,uses,image from articals where id='$id'";
                     }else{
                         header('location:user_page.php');
                         die();
@@ -79,6 +79,7 @@ if(!isset($_SESSION['name'])){
             <?php
             echo "<div class='description'>"; 
             echo "<h3>Description : </h3><p>".$row['description']."</p>";
+            echo "<h3>Uses : </h3><p>".$row['uses']."</p>";
         echo "</div>";
     }else{
         header('location:user_page.php');
