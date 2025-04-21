@@ -71,7 +71,7 @@ if(!isset($_SESSION['name'])){
                         echo "<h3>Price : ".$row['price']."/- </h3>";
                         echo "<h3>Side Effects : ".$row['side_effects']."</h3>";
                         
-                        echo "<a href='user_page.php'>Back</a>";
+                        echo "<a href='user_page.php' class='back-btn'>Back</a>";
 
                         
                 ?>

@@ -10,6 +10,14 @@ html,body{
     text-decoration: none !important;
 }
 
+
+.back-btn{
+    color: #fff; 
+    border: 1px solid #e0501b; 
+    background-color:#e0501b;
+    border-radius: 7px; 
+    padding: 5px 5px; 
+}
 .search-list{
     margin-top: 20px;
 }
@@ -58,6 +66,9 @@ html,body{
 
 .main{
     margin-top: 800px; 
+}
+.main-profile{
+    margin-top: 0px; 
 }
 
 .description { 

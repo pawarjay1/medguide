@@ -153,7 +153,7 @@ if(isset($_POST['update_profile'])){
             </li>
         </ul>
     </div>
-<div class="main">
+<div class="main-profile">
 <div class="update-profile">
 
     <?php

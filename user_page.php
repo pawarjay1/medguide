@@ -43,7 +43,7 @@ if(!isset($_SESSION['name'])){
         <!-- LANDING PAGE -->
 
         <div class="landing">
-            <div class="landingText" data-aos="fade-up" data-aos-duration="1000">
+            <div class="landingText" >
                 <h4><span style="color:#e0501b;font-size: 4vw"> What are you looking for?</span> </h4>
                 
                 <!-- <div class="btn">
@@ -84,7 +84,7 @@ if(!isset($_SESSION['name'])){
                 <!-- <h3><i class='bx bx-file'></i>Find medicine with prescription <a href="#">Upload Now</a></h3> -->
 
             </div>
-            <div class="landingImage" data-aos="fade-down" data-aos-duration="2000">
+            <div class="landingImage">
                 <!-- <img src="./assets/img/bg.png" alt=""> -->
                 <img src="./assets/img/medicine.jpg" alt="">
             </div>
@@ -97,7 +97,7 @@ if(!isset($_SESSION['name'])){
                 <h1>Find medicine using prescription <br> <span style="color:#2f8be0;font-size:3vw">How this works?</span> </h1>
                 <img src="./assets/img/doctor-woman-400px.png" alt="">
             </div>
-            <div class="aboutList" data-aos="fade-left" data-aos-duration="1000">
+            <div class="aboutList">
                 <ol>
                     <li> 
                         <span>01</span>
@@ -126,12 +126,12 @@ if(!isset($_SESSION['name'])){
         <!-- INFO SECTION -->
 
         <div class="infoSection">
-            <div class="infoHeader" data-aos="fade-up" data-aos-duration="1000">
+            <div class="infoHeader">
                 <h1>Your Health, Simplified <br> <span style="color:#e0501b">Health Tools.</span> </h1>
             </div>
             <div class="infoCards">
 
-                <div class="card one" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card one">
                     <img src="./assets/img/movie.png" class="cardoneImg" alt="" data-aos="fade-up" data-aos-duration="1100">
                     <div class="cardbgone"></div>
                     <div class="cardContent">
@@ -145,7 +145,7 @@ if(!isset($_SESSION['name'])){
                     </div>
                 </div>
 
-                <div class="card two" data-aos="fade-up" data-aos-duration="1300">
+                <div class="card two">
                     <img src="./assets/img/learn.png" class="cardtwoImg" alt="" data-aos="fade-up" data-aos-duration="1200">
                     <div class="cardbgtwo"></div>
                     <div class="cardContent">
@@ -159,7 +159,7 @@ if(!isset($_SESSION['name'])){
                     </div>
                 </div>
 
-                <div class="card three" data-aos="fade-up" data-aos-duration="1600">
+                <div class="card three">
                     <img src="./assets/img/videocall.png" class="cardthreeImg" alt="" data-aos="fade-up" data-aos-duration="1300">
                     <div class="cardbgone"></div>
                     <div class="cardContent">
@@ -178,12 +178,12 @@ if(!isset($_SESSION['name'])){
         <!-- BANNER AND FOOTER -->
 
         <div class="banner">
-            <div class="bannerText" data-aos="fade-right" data-aos-duration="1000">
+            <div class="bannerText">
                 <h1>Contact</h1>
                 <p> support@medguide.com</p>
                 <p>Location : gandhinagar</p>
             </div>
-            <div class="bannerImg" data-aos="fade-up" data-aos-duration="1000">
+            <div class="bannerImg">
                 <h1>About MedGuide</h1>
                 <p>“Your trusted companion for health tools and wellness insights.”</p>
             </div>
@@ -191,8 +191,5 @@ if(!isset($_SESSION['name'])){
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-            AOS.init();
-    </script>
 </body>
 </html>

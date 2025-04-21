@@ -85,7 +85,7 @@ if (isset($_POST['update_profile'])) {
 
 
         
-            <div class="main">
+            <div class="main-profile">
                 <div class="update-profile">
 
                     <?php
@@ -138,9 +138,6 @@ if (isset($_POST['update_profile'])) {
 
 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
 </body>
 
 </html>
