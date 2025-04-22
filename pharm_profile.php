@@ -70,62 +70,19 @@ if(isset($_POST['update_profile'])){
         <ul class="nav_list">
             
             <li>
-                <a href="driver_page.php">
+                <a href="pharm_page.php">
                     <i class='bx bx-grid-alt'></i>
                     <span class="link_name">Dashboard</span>
                 </a>
 
             </li>
             <li>
-                <a href="driver_profile.php" class="active">
+                <a href="pharm_profile.php" class="active">
                     <i class='bx bx-user'></i>
                     <span class="link_name">Profile</span>
                 </a>
 
             </li>
-            <!-- <li>
-                <a href="#">
-                    <i class='bx bx-chat'></i>
-                    <span class="link_name">Messages</span>
-                </a>
-
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bxs-user-rectangle'></i>
-                    <span class="link_name">Friends</span>
-                </a>
-
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-heart'></i>
-                    <span class="link_name">Favourite</span>
-                </a>
-
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bxs-bell-ring'></i>
-                    <span class="link_name">Notification</span>
-                </a>
-
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-folder'></i>
-                    <span class="link_name">File Manager</span>
-                </a>
-
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-cog'></i>
-                    <span class="link_name">Setting</span>
-                </a>
-
-            </li> -->
-
             <li>
                 <a href="logout.php">
                     <i class='bx bx-log-out'></i>

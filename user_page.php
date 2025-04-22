@@ -132,7 +132,7 @@ if(!isset($_SESSION['name'])){
             <div class="infoCards">
 
                 <div class="card one">
-                    <img src="./assets/img/movie.png" class="cardoneImg" alt="" data-aos="fade-up" data-aos-duration="1100">
+                    <img src="./assets/img/movie.png" class="cardoneImg" alt="">
                     <div class="cardbgone"></div>
                     <div class="cardContent">
                         <h2>BMI Calculator</h2>
@@ -146,7 +146,7 @@ if(!isset($_SESSION['name'])){
                 </div>
 
                 <div class="card two">
-                    <img src="./assets/img/learn.png" class="cardtwoImg" alt="" data-aos="fade-up" data-aos-duration="1200">
+                    <img src="./assets/img/learn.png" class="cardtwoImg" alt="">
                     <div class="cardbgtwo"></div>
                     <div class="cardContent">
                         <h2>BMR Calculator</h2>
@@ -160,7 +160,7 @@ if(!isset($_SESSION['name'])){
                 </div>
 
                 <div class="card three">
-                    <img src="./assets/img/videocall.png" class="cardthreeImg" alt="" data-aos="fade-up" data-aos-duration="1300">
+                    <img src="./assets/img/videocall.png" class="cardthreeImg" alt="" >
                     <div class="cardbgone"></div>
                     <div class="cardContent">
                         <h2>Ideal Weight Calculator</h2>

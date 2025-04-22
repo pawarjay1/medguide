@@ -39,7 +39,7 @@ if(isset($_POST['submit'])){
       else{
         $_SESSION['name'] = $row['name'];
         $_SESSION['uname'] = $row['user_type'];
-        header('location:driver_page.php');
+        header('location:pharm_page.php');
       }
       
       

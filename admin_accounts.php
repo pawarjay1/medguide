@@ -77,13 +77,13 @@ if(isset($_GET['delete'])){
                 </a>
 
             </li> -->
-            <li>
+            <!-- <li>
                 <a href="admin_notification.php">
                     <i class='bx bxs-bell-ring'></i>
                     <span class="link_name">Notification</span>
                 </a>
 
-            </li>
+            </li> -->
             <!-- <li>
                 <a href="#">
                     <i class='bx bx-folder'></i>
@@ -99,20 +99,20 @@ if(isset($_GET['delete'])){
 
             </li> -->
             <li>
-                <a href="admin_student.php">
+                <a href="admin_artical.php">
                     <i class='bx bx-plus'></i>
-                    <span class="link_name">Student</span>
+                    <span class="link_name">Articals</span>
                 </a>
 
             </li>
 
-            <li>
+            <!-- <li>
                 <a href="admin_fees_info.php">
                     <i class='bx bx-money'></i>
                     <span class="link_name">Fees info</span>
                 </a>
 
-            </li>
+            </li> -->
 
             <li>
                 <a href="logout.php">

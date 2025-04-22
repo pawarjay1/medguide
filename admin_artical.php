@@ -109,13 +109,13 @@ if(isset($_POST['submit'])){
                 </a>
 
             </li> -->
-            <li>
+            <!-- <li>
                 <a href="admin_notification.php">
                     <i class='bx bxs-bell-ring'></i>
                     <span class="link_name">Notification</span>
                 </a>
 
-            </li>
+            </li> -->
             <!-- <li>
                 <a href="#">
                     <i class='bx bx-folder'></i>
@@ -131,13 +131,13 @@ if(isset($_POST['submit'])){
 
             </li>
 
-            <li>
+            <!-- <li>
                 <a href="admin_fees_info.php">
                     <i class='bx bx-money'></i>
                     <span class="link_name">Fees info</span>
                 </a>
 
-            </li>
+            </li> -->
 
             <li>
                 <a href="logout.php">
@@ -182,7 +182,7 @@ if(isset($_POST['submit'])){
                         <input type="text" name="uses"  class="box" placeholder="enter uses of this medicine">
 
                         <span>Description :</span>
-                        <textarea name="description" id="" cols="30" rows="5" placeholder="enter basic description..." class="box"></textarea>
+                        <textarea name="description" id="" cols="30" rows="10" placeholder="enter basic description..." class="box"></textarea>
 
                         <span>Product Image :</span>
                         <input type="file" name="image" accept="image/jpg, image/jpeg, image/png" class="box">

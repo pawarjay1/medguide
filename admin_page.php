@@ -70,13 +70,13 @@ if(!isset($_SESSION['name'])){
                 </a>
 
             </li> -->
-            <li>
+            <!-- <li>
                 <a href="admin_notification.php">
                     <i class='bx bxs-bell-ring'></i>
                     <span class="link_name">Notification</span>
                 </a>
 
-            </li>
+            </li> -->
             <!-- <li>
                 <a href="#">
                     <i class='bx bx-folder'></i>
@@ -85,20 +85,20 @@ if(!isset($_SESSION['name'])){
 
             </li> -->
             <li>
-                <a href="admin_student.php">
+                <a href="admin_artical.php">
                     <i class='bx bx-plus'></i>
-                    <span class="link_name">Student</span>
+                    <span class="link_name">Articals</span>
                 </a>
 
             </li>
 
-            <li>
+            <!-- <li>
                 <a href="admin_fees_info.php">
                     <i class='bx bx-money'></i>
                     <span class="link_name">Fees info</span>
                 </a>
 
-            </li>
+            </li> -->
 
             <li>
                 <a href="logout.php">
@@ -150,7 +150,7 @@ if(!isset($_SESSION['name'])){
 
         <div class="bx">
         <?php
-        $sql = "SELECT * from users where user_type= 'Perant'";
+        $sql = "SELECT * from users where user_type= 'user'";
 
         if ($result = mysqli_query($conn, $sql)) {
         
@@ -162,14 +162,14 @@ if(!isset($_SESSION['name'])){
             echo "<h3>".$rowcount."<h3>";
          }
         ?>
-        <p id="total_account">perant accounts</p>
+        <p id="total_account">user accounts</p>
         <a href="admin_accounts.php" class="btn">see accounts</a>
         
         </div>
 
         <div class="bx">
         <?php
-        $sql = "SELECT * from users where user_type= 'Driver'";
+        $sql = "SELECT * from users where user_type= 'pharma'";
 
         if ($result = mysqli_query($conn, $sql)) {
         
@@ -181,7 +181,7 @@ if(!isset($_SESSION['name'])){
             echo "<h3>".$rowcount."<h3>";
          }
         ?>
-        <p id="total_account">driver accounts</p>
+            <p id="total_account">pharmasists accounts</p>
         <a href="admin_accounts.php" class="btn" >see accounts</a>
         
         </div>

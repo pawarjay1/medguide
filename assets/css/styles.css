@@ -130,7 +130,7 @@ html,body{
     justify-content: space-between;
     align-items: center;
     padding: 0 10vw 0 10vw;
-    height: 100vh;
+    height: 140vh;
 }
 
 .landingText h1{
@@ -208,7 +208,7 @@ html,body{
     position: absolute;
     right: 5px;
     top: 50%;
-    transform: translate(-210%,450%);
+    transform: translate(-291%, 2660%);
     background: #e0501b;
     border: none;
     padding: 10px 15px;

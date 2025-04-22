@@ -94,12 +94,12 @@ if(!isset($_SESSION['name'])){
         <!-- FOOTER -->
 
         <div class="banner">
-            <div class="bannerText" data-aos="fade-right" data-aos-duration="1000">
+            <div class="bannerText">
                 <h1>Contact</h1>
                 <p> support@medguide.com</p>
                 <p>Location : gandhinagar</p>
             </div>
-            <div class="bannerImg" data-aos="fade-up" data-aos-duration="1000">
+            <div class="bannerImg">
                 <h1>About MedGuide</h1>
                 <p>“Your trusted companion for health tools and wellness insights.”</p>
             </div>
@@ -109,8 +109,5 @@ if(!isset($_SESSION['name'])){
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-            AOS.init();
-    </script>
 </body>
 </html>
