@@ -22,7 +22,6 @@ if (!isset($_SESSION['name'])) {
 
     <!-- track files  -->
     <link rel="stylesheet" href="./css/X-demo.css">
-    <script src="4a-track.js"></script>
 </head>
 
 <body>
@@ -59,16 +58,65 @@ if (!isset($_SESSION['name'])) {
         </ul>
     </div>
     <div class="main">
-        <div class="row">
-            <div class="title">Updated</div>
-            <div class="data" id="date"></div>
+        <h1>Users Requirments</h1> 
+        <div class="bx">
+        <?php
+        $sql = "SELECT * from users";
+
+        if ($result = mysqli_query($conn, $sql)) {
+        
+            // Return the number of rows in result set
+            $rowcount = mysqli_num_rows( $result );
+            
+            // Display result
+            // printf("%d\n", $rowcount);
+            echo "<h3>".$rowcount."<h3>";
+         }
+        ?>
+        <p id="total_account">total accounts</p>
+        <a href="admin_accounts.php" class="btn">see accounts</a>
+        
         </div>
-        <div class="row">
-            <div class="title">Latitude, Longitude</div>
-            <div class="data">
-                <span id="lat"></span>, <span id="lng"></span>
-            </div>
+
+        
+        <div class="bx">
+        <?php
+        $sql = "SELECT * from users where user_type= 'user'";
+
+        if ($result = mysqli_query($conn, $sql)) {
+        
+            // Return the number of rows in result set
+            $rowcount = mysqli_num_rows( $result );
+            
+            // Display result
+            // printf("%d\n", $rowcount);
+            echo "<h3>".$rowcount."<h3>";
+         }
+        ?>
+        <p id="total_account">user accounts</p>
+        <a href="admin_accounts.php" class="btn">see accounts</a>
+        
         </div>
+
+        
+        <div class="bx">
+        <?php
+        $sql = "SELECT * from message";
+
+        if ($result = mysqli_query($conn, $sql)) {
+        
+            // Return the number of rows in result set
+            $rowcount = mysqli_num_rows( $result );
+            
+            // Display result
+            // printf("%d\n", $rowcount);
+            echo "<h3>".$rowcount."<h3>";
+         }
+        ?>
+        <p id="total_account">total messages </p>
+        <a href="admin_message.php" class="btn">see messages</a>
+        
+        </div>      
     </div>
 </body>
 

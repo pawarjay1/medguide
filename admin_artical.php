@@ -40,7 +40,7 @@ if(isset($_POST['submit'])){
     else{
             $insert = "INSERT INTO articals(title,price,side_effects,uses,description,image) values('$title','$price','$side_effects','$uses','$description','$imageData')"; 
             mysqli_query($conn,$insert);
-            header('location:admin_student.php'); 
+            header('location:admin_artical.php'); 
     }                                                                     
     
 }

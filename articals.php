@@ -11,14 +11,6 @@ if(!isset($_SESSION['name'])){
 ?>
 
 
-<?php
-
-
-
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
