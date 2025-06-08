@@ -7,3 +7,5 @@ Engine lets users search for medicines by name, providing details like uses, sid
 pricing, and availability. By combining these two tools, Med Guide streamlines the process of
 finding and buying medicines, reducing delays and helping users make informed healthcare
 choices with ease. It aims to enhance convenience and improve patient care access. 
+
+![image](https://github.com/user-attachments/assets/1280011b-3142-44f4-94ef-bccf9ccb33b3)
